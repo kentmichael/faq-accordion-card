@@ -1,6 +1,18 @@
 @use '../util' as *;
 
 .container {
-  max-width: 1440px;
+  max-width: rem(962);
   margin: 0 auto;
+  border-radius: rem(30);
+  padding-inline: rem(25);
+  padding-bottom: rem(68);
+  width: rem(375);
+  background-color: var(--white);
+
+  @include breakpoint-up(large){
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: rem(962);
+    padding: 0;
+  }
 }

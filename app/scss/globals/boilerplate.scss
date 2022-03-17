@@ -13,6 +13,19 @@ html {
 }
 
 body {
-  padding: 0;
+  padding-inline: rem(25);
+  padding-block: 147px 85px;
   margin: 0;
+  font-size: rem(12);
+  font-weight: 400;
+  height: 100vh;
+  background-image: linear-gradient(var(--soft-violet), var(--soft-blue));
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  @include breakpoint-up(large) {
+    padding: 0;
+  }
 }
